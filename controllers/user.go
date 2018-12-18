@@ -117,8 +117,10 @@ func (u *UserController) Logout() {
 	u.ServeJSON()
 }
 
-
-//@router /wxlogin [get]
+// @Title wxlogin
+// @Description wxLogin Interface
+// @Success 200 {string} wxLogin success
+// @router /wxlogin [get]
 func (u *UserController) wxLogin(){
 	u.Data["json"] = "wxLogin success"
 	u.ServeJSON()
